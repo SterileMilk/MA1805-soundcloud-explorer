@@ -1,1 +1,2 @@
 Since this project was done solo I assume my ReadMe section counts as my "short individual text file". 
+Link to live sight: https://sterilemilk.github.io/MA1805-soundcloud-explorer/
