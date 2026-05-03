@@ -343,12 +343,8 @@ if (this.hovered) {
       noStroke();
       rect(this.x + 4, this.y + 4, this.w - 8, this.h - 8);
 
-      // grime texture - random dark splotches to make it look dirty
-      // these redraw every frame which is a bit wasteful but it works
-      for (let i = 0; i < 6; i++) {
-        fill(60, 10, 0, 80);
        
-      }
+      
 
       // label stamped on
       fill(30, 5, 0);
@@ -508,7 +504,7 @@ class BloodDrip {
   constructor(x) {
     this.x = x;
     this.y = random(-200, 0); // start above the screen so they drift in
-    this.speed = random(0.3, 1.2); // drips slowly
+ this.speed = random(0.3, 1.2); // drips slowly
     this.len = random(40, 150); // length of the drip
     this.thickness = random(2, 6);
     this.col = color(random(140, 200), 0, 0); // dark red
@@ -517,7 +513,7 @@ class BloodDrip {
   update() {
     this.y += this.speed;
     // reset drip back to top when it goes off the bottom
-    if (this.y > height + 200) {
+ if (this.y > height + 200) {
       this.y = random(-200, 0);
       this.x = random(width);
       this.len = random(40, 150);
@@ -527,7 +523,7 @@ class BloodDrip {
   show() {
     stroke(this.col);
     strokeWeight(this.thickness);
-    line(this.x, this.y, this.x, this.y + this.len);
+line(this.x, this.y, this.x, this.y + this.len);
     // little blob at the end of the drip
     noStroke();
     fill(this.col);
@@ -548,8 +544,8 @@ class Particle {
     this.y = random(height);
     this.size = random(3, 10);
     this.speedX = random(-0.3, 0.3);
-    this.speedY = random(-0.5, -0.1); // drift upward slowly
-    this.opacity = random(100, 200);
+  this.speedY = random(-0.5, -0.1); // drift upward slowly
+ this.opacity = random(100, 200);
     this.col = color(random(180, 220), random(200, 230), 255, this.opacity);
   }
 
@@ -589,7 +585,7 @@ class LightRay {
     if (this.y > height + 300) {
       this.y = random(-300, 0);
       this.x = random(width);
-      this.len = random(100, 300);
+     this.len = random(100, 300);
     }
   }
 
