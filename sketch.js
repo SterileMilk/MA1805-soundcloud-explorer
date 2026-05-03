@@ -650,7 +650,7 @@ function drawResetButton() {
     noStroke();
     textSize(12);
     textAlign(CENTER, CENTER);
-    text("[ RESET ]", bx + bw / 2, by + bh / 2);
+    text("[ RESET ]", bx + bw / 2, by + bh / 2);   
   } else {
     fill(240, 245, 255);
     stroke(212, 175, 55); // gold border on peace page
